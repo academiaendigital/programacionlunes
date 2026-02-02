@@ -4,5 +4,7 @@
     - Tipos de Etiquetas
     - Selectores
     - Tipos de Selectores
+---
 ### MÓDULO 2 JAVA SCRIPT
-- 
+    - Sinntaxis
+    - Variables **Tipos**  __tipos__
