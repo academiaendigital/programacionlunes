@@ -23,24 +23,33 @@ ul{
 a{
     text-decoration: none;
 }
-.navbar-list{
+.navbar{
     display: flex;
+    justify-content: space-between;
     /*background-color: #061E29; fondo menu*/
     padding: 0;
     margin: 0;
+}
+.navbar-list{
+    display: flex;
+    gap: 20px;
 }
 .navbar-list li{
     border-right: 1px solid aqua;
 }
 .navbar-list a{
-    display: block;
+   /* display: block;*/
     font-size: 16px;
     color: var(--white-font);/*color de letras*/
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 0.5rem;
     
 }
 .navbar-list a:hover{
     color: aqua;/*color mouse por arriba*/
+}
+
+.logo{
+    width: 250px;
 }
 .quienes-somos{
     display: grid;
@@ -49,7 +58,7 @@ a{
     padding: 80px;
 }
 .img-responsive{
-    width: 600px;/*unidades absolutas*/
+    width: 500px;/*unidades absolutas*/
     border: 1px solid white;
     border-radius: 15px;
 }
