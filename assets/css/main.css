@@ -3,18 +3,33 @@
 /*DECLARACION DE VARIABLES CSS*/
 :root{
     --primary-color:#061E29;
-    --secundary-color:#5F9598;
+    --secundary-color:#00f2ff;
     --white:#ffff;
     --white-font:#F3F4F4;
+    --black:#000000;
+    --gray-dark:#1e1e1e;
 
 }
+/*REGLA DE ORO CSS ACTUALMENTE PARA QUE EL SITIO WEB NO SE DESBORDE*/
+html{
+    box-sizing: border-box;
+    /* hace que no se desborde la pagina*/
+}
+
+*,*:before, *:after{
+box-sizing: inherit;
+}
+
+
+
  /*FIN DECLARACION DE VARIABLES*/
 body{
     background-color:var(--primary-color);
     color: var(--white-font);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal ;
+    line-height: 1.5rem;
 }
 ul{
     list-style: none;
@@ -22,6 +37,10 @@ ul{
 }
 a{
     text-decoration: none;
+    color: var(--white-font);
+}
+a:hover{
+    color: var(--secundary-color);
 }
 .navbar{
     display: flex;
@@ -34,9 +53,10 @@ a{
     display: flex;
     gap: 20px;
 }
+/*
 .navbar-list li{
     border-right: 1px solid aqua;
-}
+}*/
 .navbar-list a{
    /* display: block;*/
     font-size: 16px;
@@ -54,11 +74,17 @@ a{
 .quienes-somos{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:20px;
     color: var(--white-font);
-    padding: 80px;
+    }
+.padding-40{
+    padding: 0px 40px 0 0;
+}
+.padding-20{
+    padding:  20px 0px 0px 0px;
 }
 .img-responsive{
-    width: 500px;/*unidades absolutas*/
+    width: 400px;/*unidades absolutas*/
     border: 1px solid white;
     border-radius: 15px;
 }
@@ -66,4 +92,47 @@ a{
     color: aqua; /*color de la tipografia*/
     font-size: 36px; /*tamanio de la fuente*/
     font-weight: 800;/*peso, es decir que tan gordita es*/
+}
+.servicios-container{
+    background-color: var(--secundary-color);
+    padding: 80px 30px;
+    color: var(--gray-dark);
+  
+}
+.servicios{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+row-gap: 20px;
+
+}
+.center{
+    text-align: center;
+}
+
+.footer-container{
+    background-color: var(--gray-dark);
+    padding: 50px 0px 0px 0px;
+    font-size: 12px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+    padding: 0px 40px;
+}
+.footer h3{
+    color: var(--secundary-color);
+}
+.logo-footer{
+    max-width: 200px;
+}
+.social-icons{
+    display:flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.copyright{
+    background-color: var(--black);
+    padding: 10px 30px;
+    font-size: 10px;
 }
